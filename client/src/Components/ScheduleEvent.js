@@ -10,7 +10,6 @@ function ScheduleEvent() {
   };
  const handleSubmit = async (e) => {
     e.preventDefault();
-    // const { task } = this.state;
     const response = await fetch("http://localhost:5000/add_event", {
       method: "POST",
       headers: {
@@ -21,7 +20,7 @@ function ScheduleEvent() {
 
     // Log the response here
     console.log("Raw response:", response);
-
+    
     if (!response.ok) {
       console.error("Error:", response.statusText);
       return;
@@ -43,7 +42,7 @@ function ScheduleEvent() {
       {/* const { task, response } = this.state; */}
       
       <div className="container">
-        <h1 className="my-4">Task Scheduler</h1>
+        <h1 className="my-4">Schedule Your Event</h1>
         <form onSubmit={handleSubmit} className="mb-3">
           <div className="input-group">
             <input
@@ -54,7 +53,7 @@ function ScheduleEvent() {
               className="form-control task-input"
             />
             <button type="submit" className="btn btn-primary">
-              Schedule Task
+              Schedule Event
             </button>
           </div>
         </form>

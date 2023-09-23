@@ -22,14 +22,14 @@ function Navigation() {
     <Nav style={{borderBottom:'1px solid black'}}>
       <Container border>
         <Nav.Brand href="#home">
-        <span style={{fontWeight:'1000',fontFamily:'Okra',fontSize:'30px'}}>Sync AI</span>
+        <span style={{fontWeight:'1000',fontFamily:'Okra',fontSize:'30px'}}>Event-Scheduler</span>
         </Nav.Brand>
         <Nav.Toggle />
         <Nav.Collapse className="justify-content-end">
           <Nav.Text>
-          <span style={{fontWeight:'400',fontFamily:'Okra',fontSize:'30px',padding:'30px'}}>About</span>
-          <span style={{fontWeight:'400',fontFamily:'Okra',fontSize:'30px'}}>Pricing</span>
-          <Button onClick={handleLogout}><span style={{fontWeight:'400',fontFamily:'Okra',fontSize:'30px'}}>Logout</span></Button>
+          {/* <span style={{fontWeight:'400',fontFamily:'Okra',fontSize:'30px',padding:'30px'}}>About</span>
+          <span style={{fontWeight:'400',fontFamily:'Okra',fontSize:'30px'}}>Pricing</span> */}
+          {/* <Button style={{fontCase:'Lowercase'}}onClick={handleLogout}><span style={{fontWeight:'400',fontFamily:'Okra',fontSize:'20px'}}>Logout</span></Button> */}
           </Nav.Text>
         </Nav.Collapse>
       </Container>

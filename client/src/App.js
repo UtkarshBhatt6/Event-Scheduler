@@ -16,8 +16,8 @@ function App() {
      <Routes>
          <Route exact path="/" element={<LandingPage/>} />     
          <Route path="/Login" element={<Login setUser={setUser}/>} />     
-         <Route path="/Page" element={ <Page/>} />     
-         <Route path='/ScheduleEvent' element={<ScheduleEvent />} /> 
+         <Route path="/Page" element={ <ScheduleEvent/>} />     
+         {/* <Route path='/ScheduleEvent' element={<ScheduleEvent />} />  */}
      </Routes>
    </BrowserRouter>
     </div>

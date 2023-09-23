@@ -89,13 +89,13 @@ function Login(props) {
     <div style={{display:'flex',justifyContent:'center'}}>
         <FormExample/>
     </div>
-    {/* <div style={{display:'flex',justifyContent:'center'}} id="signIn" > */}
+    <div style={{display:'flex',justifyContent:'center'}} id="signIn" >
     <Button   onClick={(e) => {
       e.preventDefault();
       window.location.href='http://localhost:5000/google';
       }} style={{alignItems:'left'}}>Google Login</Button>
 
-    {/* </div> */}
+    </div>
      
     </div>       
 
