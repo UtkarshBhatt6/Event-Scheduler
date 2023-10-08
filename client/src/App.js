@@ -7,7 +7,6 @@ import Login from './Components/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Page from './Components/Page';
 import ScheduleEvent from './Components/ScheduleEvent';
-import ProfileCard from './Components/ProfileCard';
 import { useState } from 'react';
 function App() {
     const [user,setUser]=useState({})
@@ -18,7 +17,7 @@ function App() {
          <Route exact path="/" element={<LandingPage/>} />     
          <Route path="/Login" element={<Login setUser={setUser}/>} />     
          <Route path="/Page" element={ <ScheduleEvent/>} />     
-         <Route path='/ProfileCard/:email' element={<ProfileCard/>} /> 
+         {/* <Route path='/ScheduleEvent' element={<ScheduleEvent />} />  */}
      </Routes>
    </BrowserRouter>
     </div>
